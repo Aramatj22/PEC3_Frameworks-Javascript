@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {///atributo compilerOptions que permite configurar las opciones para el compilador de Typescript
+    /* Basic Options */
+    "target": "es2015", // Parámetro "target" para especificar la versión de ecmascript que se genera al compilar
+    "module": "commonjs", // atributo "module" para especificar la configuración al generar módulos en el proyecto
+    "outDir": "./dist",  // Sirve para indicar el directorio donde se van a colocar los archivos Javascript, ".js", una vez transpilados.
+    "rootDir": "./src", // Indica dónde están los archivos fuente, con el código TypeScript, ".ts", que debe ser traducido.
+    "strict": true,//Para habilitar la verificación estricta de tipos en el proyecto
+    "incremental": true,//Habilitar la compilación incremental,es decir que guarde información sobre el gráfico del proyecto desde la última compilación en archivos almacenados en el disco. 
+    "tsBuildInfoFile": "./buildcache",//Esta configuración le permite especificar un archivo para almacenar información de compilación incremental como parte de proyectos compuestos, lo que permite una construcción más rápida de bases de código TypeScript más grandes.
+  }
+}
